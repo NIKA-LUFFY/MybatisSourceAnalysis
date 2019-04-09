@@ -109,6 +109,7 @@ public class ClassLoaderWrapper {
    * @return the resource or null
    */
   InputStream getResourceAsStream(String resource, ClassLoader[] classLoader) {
+
     for (ClassLoader cl : classLoader) {
       if (null != cl) {
 
